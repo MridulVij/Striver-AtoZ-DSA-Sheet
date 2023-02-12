@@ -10,7 +10,7 @@ int revNum=0;
      // copy variable
     int dup=n;
     // program starts from here
-    while(n>0){
+    while(n!=0){
         int digit = n%10;
         sum = sum+(digit*digit*digit);
         n/=10;
