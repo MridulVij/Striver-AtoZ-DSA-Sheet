@@ -9,7 +9,7 @@ int ans=0;
      // copy variable
      int dup = n;
      // program start from here
-    while(n>0){
+    while(n!=0){
         int digit = n%10;
         ans = (ans*10)+digit;
         n/=10;
