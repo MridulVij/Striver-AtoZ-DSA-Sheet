@@ -16,11 +16,10 @@ class Solution{
 int main()
 {
 Solution s;
-int A[]={1,2,3,4,5,6,7,8,9};
+int A[]={1,2,3,4,5,10,7,8,9};
 // checking the size of static array/ normal array
 int S=sizeof(A)/sizeof(A[0]);
-int ans=s.function(A,S);
-if(ans==1)
+if(s.function(A,S)==1)
 cout<<"Array is Sorted!";
 else
 cout<<"Array is Not Sorted!";
