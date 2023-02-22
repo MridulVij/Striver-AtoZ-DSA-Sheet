@@ -1,4 +1,4 @@
-// Intersection of two sorted arrays
+// Find the repeating and missing numbers
 
 #include <bits/stdc++.h>
 using namespace std;
