@@ -12,9 +12,10 @@ class Solution{
         if(arr[i]==1)
             count++;
         else
-            if(count>maxCount){
-                maxCount=count;
-            }
+            // if(count>maxCount){
+            //     maxCount=count;
+            // }
+            count = max(count, maxCount);
     }
     cout<<count<<endl;;
  }
@@ -33,7 +34,7 @@ class Solution{
                }
                ans=max(ans,j-i+1);       
          }
-         cout<<ans<<endl;
+         cout<<"Maximum Consecutive by Flipping the K no. of Zeros and then find Maximum Consecutive is : "<<ans<<endl;
  }
 };
 
@@ -42,10 +43,10 @@ int main()
 Solution s;
 int a[]={1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1};
 int n=sizeof(a)/sizeof(a[0]);
-int m=1;
+int m=2;
 
 // This Code is used to count 1's from whole array by ignoring 0's from array
-s.function1(a,n);
+//s.function1(a,n);
 // This Code is used to count 1's by checking 
 s.function2(a,n,m);
 
