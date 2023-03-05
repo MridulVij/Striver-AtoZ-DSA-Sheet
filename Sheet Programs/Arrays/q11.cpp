@@ -5,6 +5,8 @@ using namespace std;
 
 class Solution{
  public:
+
+ // leetcode
  void function1(int arr[], int n){
     int count=0;
     int maxCount=0;
@@ -15,12 +17,12 @@ class Solution{
             // if(count>maxCount){
             //     maxCount=count;
             // }
-            count = max(count, maxCount);
+            maxCount = max(count, maxCount);
     }
-    cout<<count<<endl;;
+    cout<<maxCount<<endl;;
  }
 
-
+// Gfg
  void function2(int arr[], int n, int m){
     int zerocnt=0,i=0,ans=0,j=0;
         for(j=0;j<n;j++)
@@ -46,9 +48,9 @@ int n=sizeof(a)/sizeof(a[0]);
 int m=2;
 
 // This Code is used to count 1's from whole array by ignoring 0's from array
-//s.function1(a,n);
+s.function1(a,n);
 // This Code is used to count 1's by checking 
-s.function2(a,n,m);
+//s.function2(a,n,m);
 
 return 0;
 }
